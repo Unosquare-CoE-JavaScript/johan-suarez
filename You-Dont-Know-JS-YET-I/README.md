@@ -38,4 +38,34 @@ Or in a per-function scope:\
 
 Also, by default all content in a module is set in strict mode.
 
+---
+
+## Chapter 2
+
+**Interpolation**: `` `My name is ${name}` ``
+
+**Js Types**:
+
+![Js types](https://www.edureka.co/blog/wp-content/uploads/2012/09/data-types-in-python.png)
+
+**typeof**: Let you know what type of data is a value, e.g:  
+`typeof 'lorep ipsum'`\
+`//string`
+
+**Block scope**:
+
+![Block scope](https://pbs.twimg.com/media/EeVw-DOXgAAMtKk.jpg)
+
+**Coercive comparasion**:
+
+Note: When two values are strings, and you use < or > comparator, JS use alphabetical comparation of the strings:
+
+`var x='10'`\
+`var y='9'`\
+`x<y // true `
+
+---
+
+
+
 
