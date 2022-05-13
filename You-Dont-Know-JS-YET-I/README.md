@@ -134,5 +134,16 @@ console.log(suma10(2)); // muestra 12
 
 ---
 
+## Chapter 4
 
+JS Pilars:
+
+1.  Scope and closure
+2.  Prototypes
+3.  Types and Coercion
+
+
+## Apendix A
+
+-Primitive types assignment is by value, objects (arrays, objects and functions) assignment is by reference.
 
