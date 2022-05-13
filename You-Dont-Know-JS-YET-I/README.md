@@ -30,11 +30,13 @@ Only whitespace and comments are allowed, before the use-strict pragma.\
 Then, the rest of the file runs in strict mode.
 
 Or in a per-function scope:\
-`function someOperations() {`\
-`// whitespace and comments are fine here`\
-`"use strict";`\
-`// all this code will run in strict mode`\
-`}`
+```
+function someOperations() {
+// whitespace and comments are fine here
+"use strict";
+// all this code will run in strict mode
+}
+```
 
 Also, by default all content in a module is set in strict mode.
 
@@ -49,8 +51,10 @@ Also, by default all content in a module is set in strict mode.
 ![Js types](https://www.edureka.co/blog/wp-content/uploads/2012/09/data-types-in-python.png)
 
 **typeof**: Let you know what type of data is a value, e.g:  
-`typeof 'lorep ipsum'`\
-`//string`
+```
+typeof 'lorep ipsum'
+//string`
+```
 
 **Block scope**:
 
@@ -60,12 +64,75 @@ Also, by default all content in a module is set in strict mode.
 
 Note: When two values are strings, and you use < or > comparator, JS use alphabetical comparation of the strings:
 
-`var x='10'`\
-`var y='9'`\
-`x<y // true `
+```
+
+var x='10'
+var y='9'
+x<y // true
+``` 
 
 ---
 
+## Chapter 3
+
+**Iterables**: arrays, strings, objects, maps.
+
+Iterables has another ways to consume it, e.g:
+
+iterable.values(): return only the values of the iterable
+iterable.entries(): return [index,value] of the original iterable
+
+**Spread operator**: Let spread iterables e.g:
+
+```
+let data=[1,2,3];
+let copyArray=[...data]
+let dataObj={color: "blue", name: "bob"}
+let copyObj={...dataObj}
+```
+
+Also let pass arguments in a function:\
+`someFunct(...dataObj)`
+
+**Map**: Similar to objects, is a data structure with key - value form, but in map you can store in key any type of data, maps are iterables, objects not, you can get size of a map, in object you can't, also map has a few useful methods that objects don't have.
+
+![maps in js](https://i.ytimg.com/vi/-HjvUAP2Zvg/maxresdefault.jpg)
+
+**Destructuring**: Let unpack values from an array or object: e.g:
+
+```
+let [a,b]=[1,2,3,4,5];
+console.log(a,b);
+//1 2;
+
+let objValue={name: "test", color: "black"};
+const {name, color}=objValue;
+console.log(name,color)
+//test black`
+```
+
+**Closures**: Is a combination of a function and variables store it in a certain time e.g:
+
+```
+function creaSumador(x) {
+  return function(y) {
+    return x + y;
+  };
+}
+
+var suma5 = creaSumador(5);
+var suma10 = creaSumador(10);
+
+console.log(suma5(2));  // muestra 7
+console.log(suma10(2)); // muestra 12 
+```
+
+**This keyword**: Is an object, this object depends on where is called the function, e.g in js practice file.
+
+**Prototype**: Is a characcteristic of objects (remember functions are objects), also is a mechanism to apply some sort of inheritance.
+
+
+---
 
 
 
