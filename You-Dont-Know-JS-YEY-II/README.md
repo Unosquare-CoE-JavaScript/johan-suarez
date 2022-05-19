@@ -33,23 +33,7 @@ let special = "JavaScript";
 
 -Curiously, in Node every file is treated like modules, so although you define something in the "global scope" is not really there, you have to define through global keyword to define it there.
 
-Like this: 
-
 ``global.someObject=5``
-
--**Hoisting**: It means that in a figurative way, when you define a function or a variable with var, it goes up to the code, so you can use it or called no matter where you define it. For the specific case of var, the hoisting "moves" the declaration up, but, and this is important, the variable is set as undefined, the assignation is not set untilx runtime.
-
--**POLE (Principle of least exposure)**: Limit scope of variables and functions to avoid name collisions and other problems.
-
--**Closure**: Is a function that saves their outter scope in order to use variables that are out of his own scope.
-
--**Modules**:
-
-export default: only can use it once, and when import it, it can be import it with any name
-
-export: can be used as many times as you want, it must be imported with the same name that export it.
-
-
 
 
 
