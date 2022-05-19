@@ -37,6 +37,8 @@ Like this:
 
 ``global.someObject=5``
 
+-Every new loop cycle is a new scope
+
 -**Hoisting**: It means that in a figurative way, when you define a function or a variable with var, it goes up to the code, so you can use it or called no matter where you define it. For the specific case of var, the hoisting "moves" the declaration up, but, and this is important, the variable is set as undefined, the assignation is not set untilx runtime.
 
 -**POLE (Principle of least exposure)**: Limit scope of variables and functions to avoid name collisions and other problems.
