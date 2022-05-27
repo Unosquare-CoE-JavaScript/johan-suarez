@@ -14,7 +14,7 @@ Syntax: `new Promise((resolve,reject)=>{})`
 
 **Promise.allSettled**: Resolve **or** reject for each prmise when all promises finish resolving.
 
-``Promise.allSettled([p1,p2,p3]).then((responses)=>{});
+`Promise.allSettled([p1,p2,p3]).then((responses)=>{});`
 
 ###Async/Await:
 Syntax: `async function any(){await promise}`
@@ -30,4 +30,36 @@ const getData = async id => {
 };
 ```
 
-Every return value in an async function is a promise.
+Every function with async keyword returns a promise
+
+### Generators
+
+Syntax: `function * name(){};`
+
+A generator function return a generator object, that is an iterable (we can use for of or in)
+
+Use the word yield to hold the execution and also to return multiple values e.g:
+
+```
+function \* generatorFunction(){
+yield 1;
+yield "2";
+yield "blue";
+}
+
+let generatorObj = generatorFunction();
+
+for(let value of generatorObj){
+console.log(value); //1,2,blue
+}
+```
+
+Also we can use like this:
+
+```
+let secondGeneratorObj=generatorFunction();
+console.log(secondGeneratorObj.next().value) //1;
+console.log(secondGeneratorObj.next().value) //2
+console.log(secondGeneratorObj.next().value) //blue
+console.log(secondGeneratorObj.next().done) //true
+```
