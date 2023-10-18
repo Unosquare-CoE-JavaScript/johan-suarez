@@ -1,0 +1,18 @@
+<!--Imperative design-->
+<div>
+  <div>This is an example of imperative design:</div>
+  The name is <b>{{name}}</b> it got <b>{{age}}</b> years and his favorite color is: <b>{{color}}</b>
+</div>
+
+<br>
+
+<!--Reactive design-->
+<div *ngIf="observable1$ | async as person">
+  <div>This is an example of reactive design using async pipe:</div>
+  The name is <b>{{person.name}}</b> it got <b>{{person.age}}</b> years and his favorite color is:
+  <b>{{person.color}}</b>
+</div>
+
+<br>
+
+<button #click id="click">click me</button>
