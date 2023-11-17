@@ -1,0 +1,16 @@
+<div>
+  <h1>Imperative style:</h1>
+  <div>
+    Title:
+    {{titleImperativeStyle}}
+    Completed:
+    {{completedImperativeStyle}}
+  </div>
+  <h1>Reactive style:</h1>
+  <div>
+    Title:
+    {{titleReactiveStyle$ | async}}
+    Completed:
+    {{completedReactiveStyle$ | async}}
+  </div>
+</div>
